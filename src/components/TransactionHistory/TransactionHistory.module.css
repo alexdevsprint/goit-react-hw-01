@@ -1,0 +1,21 @@
+.history {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history thead {
+    background-color: #323232;
+    color: #fff;
+}
+
+.history th, .history td {
+    border: 1px solid #323232;
+    padding: 5px 0; 
+    
+}
+
+.history td {
+    font-size: 18px;
+    color:#2a2a2a;
+}
+

@@ -2,7 +2,7 @@ import css from './TransactionHistory.module.css'
 
 function TransactionHistory({items}) {
   return (
-    <table>
+    <table className={css.history}>
       <thead>
         <tr>
           <th>Type</th>

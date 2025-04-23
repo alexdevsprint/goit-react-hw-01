@@ -1,34 +1,34 @@
-function Profile({userData}) {
-    const { username, tag, location, avatar, stats } = userData;
-  return (
-    <>
-      <div>
-        <div>
-          <img
-            src={avatar}
+import css from './Profile.module.css'
+
+function Profile({ name, tag, location, image, stats }) {    
+  return (    
+      <div className={css.profile}>
+        <div className={css.profileInfoContainer}>
+          <img className={css.profileAvatar}
+            src={image}
             alt="User avatar"
+            width='200'
           />
-          <p>{username}</p>
-          <p>{tag}</p>
-          <p>{location}</p>
+          <p className={css.profileName}>{name}</p>
+          <p className={css.profileTag}>@{tag}</p>
+          <p className={css.profileLocation}>{location}</p>
         </div>
 
-        <ul>
-          <li>
+        <ul className={css.profileList}>
+          <li className={css.profileItem}>
             <span>Followers</span>
-            <span>{stats.followers}</span>
+            <span className={css.profileFollowers}>{stats.followers}</span>
           </li>
-          <li>
+          <li className={css.profileItem}>
             <span>Views</span>
-            <span>{stats.views}</span>
+            <span className={css.profileFollowers}>{stats.views}</span>
           </li>
-          <li>
+          <li className={css.profileItem}>
             <span>Likes</span>
-            <span>{stats.likes}</span>
+            <span className={css.profileFollowers}>{stats.likes}</span>
           </li>
         </ul>
-      </div>
-    </>
+      </div>    
   );
 }
 

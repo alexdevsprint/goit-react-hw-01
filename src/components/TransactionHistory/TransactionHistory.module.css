@@ -1,6 +1,8 @@
 .history {
-    width: 100%;
+    width: 500px;
     border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .history thead {
@@ -19,3 +21,10 @@
     color:#2a2a2a;
 }
 
+.history tbody tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.history tbody tr td:first-child {
+  text-transform: capitalize;
+}

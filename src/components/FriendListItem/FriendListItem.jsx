@@ -3,9 +3,9 @@ import css from './FriendListItem.module.css'
 function FriendListItem({avatar, name, isOnline}) {
   return (
     <div>
-      <img src={avatar} alt="Avatar" width="48" />
-      <p>{name}</p>
-      <p>{isOnline}</p>
+      <img className={css.friendItemAvatar} src={avatar} alt="Avatar" width="70" />
+      <p className={css.friendItemName}>{name}</p>
+      <p className={css.friendItemOnline}>{isOnline}</p>
     </div>
   );
 }

@@ -3,16 +3,27 @@
   margin-bottom: 10px;
 }
 .friendItemName {
-  font-size: 20px;
+  font-size: 14px;
   margin-bottom: 5px;
+  
 }
 
 .friendItemStatus {
-    font-size: 12px;
+    font-size: 8px;
 }
 .friendItemOnline {
   color: green;
 }
 .friendItemOffline {
   color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .friendItemName {
+    font-size: 20px;
+   
+  }
+  .friendItemStatus {
+    font-size: 12px;
+}
 }
